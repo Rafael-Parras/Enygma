@@ -44,9 +44,9 @@
     } while (opcao != 0);
 
     return 0;
-}
+    }
 
-void gerarMapa(){
+    void gerarMapa(){
     char letras[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     // copia inicial
@@ -67,9 +67,9 @@ void gerarMapa(){
     for (int i = 0; i < 26; i++) {
         mapa_inverso[mapa[i] - 'A'] = 'A' + i;
     }
-}
+    }
 
-void criptografar(){
+    void criptografar(){
     char texto[100];
 
     printf("Digite o texto (sem espaco): ");
@@ -82,9 +82,9 @@ void criptografar(){
     }
 
     printf("Criptografado: %s\n", texto);
-}
+    }
 
-void descriptografar(){
+    void descriptografar(){
     char texto[100];
 
     printf("Digite o texto (sem espaco): ");
@@ -97,5 +97,5 @@ void descriptografar(){
     }
 
     printf("Descriptografado: %s\n", texto);
-}
+    }
 
