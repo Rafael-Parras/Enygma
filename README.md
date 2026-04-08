@@ -1,5 +1,3 @@
-# Enygma
-
     #include <stdio.h>
     #include <stdlib.h>
     #include <time.h>
@@ -44,7 +42,7 @@
         } while (opcao != 0);
 
         return 0;
-        }   
+        }
 
         void gerarMapa(){
         char letras[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -72,8 +70,9 @@
     void criptografar(){
     char texto[100];
 
-    printf("Digite o texto (sem espaco): ");
-    scanf("%s", texto);
+    printf("Digite o texto: ");
+    getchar();
+    fgets(texto, 100, stdin);
 
     for (int i = 0; texto[i] != '\0'; i++) {
         if (texto[i] >= 'A' && texto[i] <= 'Z') {
@@ -87,8 +86,9 @@
     void descriptografar(){
     char texto[100];
 
-    printf("Digite o texto (sem espaco): ");
-    scanf("%s", texto);
+    printf("Digite o texto: ");
+    getchar();
+    fgets(texto, 100, stdin);
 
     for (int i = 0; texto[i] != '\0'; i++) {
         if (texto[i] >= 'A' && texto[i] <= 'Z') {
