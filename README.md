@@ -41,21 +41,21 @@
                 printf("Opcao invalida! Tente novamente.\n");
         }
 
-    } while (opcao != 0);
+        } while (opcao != 0);
 
-    return 0;
-    }
+        return 0;
+        }   
 
-    void gerarMapa(){
-    char letras[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        void gerarMapa(){
+        char letras[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    // copia inicial
-    for (int i = 0; i < 26; i++) {
+        // copia inicial
+        for (int i = 0; i < 26; i++) {
         mapa[i] = letras[i];
-    }
+        }
 
-    // embaralhar (Fisher-Yates)
-    for (int i = 25; i > 0; i--) {
+        // embaralhar (Fisher-Yates)
+        for (int i = 25; i > 0; i--) {
         int j = rand() % (i + 1);
 
         char temp = mapa[i];
