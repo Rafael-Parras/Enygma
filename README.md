@@ -1,17 +1,17 @@
 # Enygma
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <time.h>
 
-void criptografar();
-void descriptografar();
-void gerarMapa();
+    void criptografar();
+    void descriptografar();
+    void gerarMapa();
 
-char mapa[26];
-char mapa_inverso[26];
+    char mapa[26];
+    char mapa_inverso[26];
 
-int main(){
+    int main(){
     int opcao;
 
     srand(time(NULL));
